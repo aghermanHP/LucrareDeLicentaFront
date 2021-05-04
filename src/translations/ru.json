@@ -1,0 +1,9 @@
+{
+  "menu": {
+    "home": "domoi",
+    "list": "spisok",
+    "add": "dobaviti",
+    "register": "registratiia",
+    "contacts": "contacta"
+  }
+}

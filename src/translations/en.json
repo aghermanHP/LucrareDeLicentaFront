@@ -1,0 +1,9 @@
+{
+  "menu": {
+    "home": "Home",
+    "list": "List",
+    "add": "Add",
+    "register": "register",
+    "contacts": "contacts"
+  }
+}

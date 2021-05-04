@@ -20,7 +20,7 @@
                 dark
                 flat
               >
-                <v-toolbar-title>Login to LAV</v-toolbar-title>
+                <v-toolbar-title>Login to JR</v-toolbar-title>
                 <v-spacer />
                 <v-tooltip bottom>
                   <template v-slot:activator="{ on }">

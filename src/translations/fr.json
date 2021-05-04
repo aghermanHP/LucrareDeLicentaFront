@@ -1,0 +1,9 @@
+{
+  "menu": {
+    "home": "maison",
+    "list": "list",
+    "add": "ajouter",
+    "register": "autentification",
+    "contacts": "contact"
+  }
+}

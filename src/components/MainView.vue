@@ -120,7 +120,7 @@
     >
       <v-spacer />
 
-      <v-toolbar-title>LAV</v-toolbar-title>
+      <v-toolbar-title>JR</v-toolbar-title>
 
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
     </v-app-bar>
@@ -147,7 +147,7 @@
     >
       <v-spacer />
 
-      <span class="white--text">&copy;  Reserved by LAV in 2020</span>
+      <span class="white--text">&copy;  Reserved by JobRapide in 2020</span>
     </v-footer>
   </v-app>
 </template>

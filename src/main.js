@@ -6,17 +6,23 @@ import vuetify from './plugins/vuetify';
 import store from '@/store';
 import VueSession from 'vue-session';
 import 'material-design-icons-iconfont/dist/material-design-icons.css';
-Vue.use(VueSession)
+import VueI18n from 'vue-i18n';
+import languages from './translations/languages'
+
+Vue.use(VueSession);
+Vue.use(VueI18n);
 firebase.analytics();
 Vue.prototype.$firebase = firebase;
 Vue.config.productionTip = false;
 export default router;
 
+const translator = new VueI18n({locale: 'ro', languages})
 
 new Vue({
-  router,
-  store,
-  vuetify,
-	firebase,
-  render: h => h(App)
+    router,
+    store,
+    vuetify,
+    translator,
+    firebase,
+    render: h => h(App)
 }).$mount('#app')
