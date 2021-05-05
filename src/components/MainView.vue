@@ -1,10 +1,6 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer
-      v-model="drawer"
-      app
-      right
-    >
+    <v-navigation-drawer v-model="drawer" app right>
       <v-list dense>
         <v-list-item link to="/">
           <v-list-item-action>
@@ -12,7 +8,7 @@
           </v-list-item-action>
 
           <v-list-item-content>
-            <v-list-item-title>Acasa</v-list-item-title>
+            <v-list-item-title>{{ $t("menu.home") }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -22,7 +18,7 @@
           </v-list-item-action>
 
           <v-list-item-content>
-            <v-list-item-title>Lista</v-list-item-title>
+            <v-list-item-title>{{ $t("menu.list") }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -32,7 +28,7 @@
           </v-list-item-action>
 
           <v-list-item-content>
-            <v-list-item-title>Adaugare</v-list-item-title>
+            <v-list-item-title>{{ $t('menu.add') }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -42,7 +38,7 @@
           </v-list-item-action>
 
           <v-list-item-content>
-            <v-list-item-title>Autentificare</v-list-item-title>
+            <v-list-item-title>{{ $t('menu.register') }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -52,7 +48,7 @@
           </v-list-item-action>
 
           <v-list-item-content>
-            <v-list-item-title>Logout</v-list-item-title>
+            <v-list-item-title>{{ $t("menu.logout") }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -69,7 +65,7 @@
             <v-list-group>
               <template v-slot:activator>
                 <v-list-item-content>
-                  <v-list-item-title>Contacts</v-list-item-title>
+                  <v-list-item-title>{{ $t('menu.contacts') }}</v-list-item-title>
                 </v-list-item-content>
               </template>
 
@@ -119,7 +115,9 @@
       dark
     >
       <v-spacer />
-
+      <v-toolbar-items>
+        <language-filter/>
+      </v-toolbar-items>
       <v-toolbar-title>JR</v-toolbar-title>
 
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
@@ -153,12 +151,15 @@
 </template>
 
 <script>
-import * as firebase from 'firebase'
+import i18nFilter from "./i18nFilter";
 
   export default {
     name: 'MainView',
     props: {
       source: String,
+    },
+    components: {
+      LanguageFilter : i18nFilter
     },
     data: () => ({
       drawer: false,

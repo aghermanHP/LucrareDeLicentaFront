@@ -16,13 +16,18 @@ Vue.prototype.$firebase = firebase;
 Vue.config.productionTip = false;
 export default router;
 
-const translator = new VueI18n({locale: 'ro', languages})
+const messages = languages
+
+const i18n = new VueI18n({messages})
+
 
 new Vue({
     router,
     store,
     vuetify,
-    translator,
+    i18n,
     firebase,
     render: h => h(App)
 }).$mount('#app')
+
+i18n.locale = 'ro'

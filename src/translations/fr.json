@@ -4,6 +4,7 @@
     "list": "list",
     "add": "ajouter",
     "register": "autentification",
-    "contacts": "contact"
+    "contacts": "contact",
+    "logout": "Sortir"
   }
 }

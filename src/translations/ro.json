@@ -1,9 +1,10 @@
 {
   "menu": {
-    "home": "acasa",
-    "list": "lista",
-    "add": "adaugare",
-    "register": "autentificare",
-    "contacts": "contacte"
+    "home": "Acasa",
+    "list": "Lista",
+    "add": "Adaugare",
+    "register": "Autentificare",
+    "contacts": "Contacte",
+    "logout": "iesiti"
   }
 }

@@ -3,7 +3,8 @@
     "home": "Home",
     "list": "List",
     "add": "Add",
-    "register": "register",
-    "contacts": "contacts"
+    "register": "Register",
+    "contacts": "Contacts",
+    "logout": "Logout"
   }
 }

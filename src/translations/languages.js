@@ -1,13 +1,12 @@
-import en from 'en.json';
-import ru from 'ru.json';
-import ro from 'ro.json';
-import fr from 'fr.json';
+import english from './en.json';
+import russian from './ru.json';
+import romanian from './ro.json';
+import french from './fr.json';
 
-const languages = {
-    en: en,
-    fr: fr,
-    ru: ru,
-    ro: ro
-}
+const languages = {};
+    languages.en = english;
+    languages.fr = french;
+    languages.ro = romanian;
+    languages.ru = russian
 
 export default languages;

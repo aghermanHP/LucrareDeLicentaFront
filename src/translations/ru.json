@@ -4,6 +4,7 @@
     "list": "spisok",
     "add": "dobaviti",
     "register": "registratiia",
-    "contacts": "contacta"
+    "contacts": "contacta",
+    "logout": "vahod"
   }
 }
