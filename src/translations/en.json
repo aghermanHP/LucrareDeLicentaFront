@@ -6,5 +6,7 @@
     "register": "Register",
     "contacts": "Contacts",
     "logout": "Logout"
-  }
+  },
+  "language": "Language",
+  "badEmail": "The email address is already in use by another account."
 }

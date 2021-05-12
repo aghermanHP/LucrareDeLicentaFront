@@ -11,15 +11,14 @@ import languages from './translations/languages'
 
 Vue.use(VueSession);
 Vue.use(VueI18n);
+
+const messages = languages
+const i18n = new VueI18n({messages})
+
 firebase.analytics();
 Vue.prototype.$firebase = firebase;
 Vue.config.productionTip = false;
 export default router;
-
-const messages = languages
-
-const i18n = new VueI18n({messages})
-
 
 new Vue({
     router,

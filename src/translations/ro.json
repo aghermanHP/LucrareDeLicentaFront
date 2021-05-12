@@ -6,5 +6,7 @@
     "register": "Autentificare",
     "contacts": "Contacte",
     "logout": "iesiti"
-  }
+  },
+  "language": "Limba",
+  "badEmail": "Adresa de e-mail este deja utilizată de un alt cont."
 }

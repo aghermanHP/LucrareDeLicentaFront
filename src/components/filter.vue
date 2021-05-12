@@ -5,19 +5,19 @@
     color="teal"
     class="filter-position"
   >
-    <v-btn @click="sendCaEvent">
-      <span>CA</span>
-      <v-icon>mdi-brain</v-icon>
+    <v-btn @click="sendFullTimeEvent">
+      <span>Full-time</span>
+      <v-icon>mdi-account-clock-outline</v-icon>
     </v-btn>
 
-    <v-btn @click="sendCcEvent">
-      <span>CC</span>
-      <v-icon>mdi-account-multiple-check</v-icon>
+    <v-btn @click="sendPartTimeEvent">
+      <span>Part-time</span>
+      <v-icon>mdi-briefcase-clock-outline</v-icon>
     </v-btn>
 
-    <v-btn @click="sendCslEvent">
-      <span>CSL</span>
-      <v-icon>mdi-map-marker</v-icon>
+    <v-btn @click="sendFreelanceEvent">
+      <span>Freelance</span>
+      <v-icon>mdi-account-reactivate-outline</v-icon>
     </v-btn>
   </v-bottom-navigation>
 </template>
@@ -31,21 +31,22 @@
       }
     },
     created(){
-       this.sendCaEvent()
+       this.sendFullTimeEvent()
     },
     methods: {
-      sendCcEvent(){
+      sendPartTimeEvent(){
           this.$emit('CC')
       },
-      sendCaEvent(){
-        this.$emit('CA')
+      sendFullTimeEvent(){
+        this.$emit('FT')
       },
-      sendCslEvent(){
+      sendFreelanceEvent(){
         this.$emit('CSL')
       }
     }
   }
 </script>
+
 <style>
 #filter-position{
     margin-top: 230px;

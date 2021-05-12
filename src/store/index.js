@@ -67,8 +67,15 @@ export default new Vuex.Store({
          router.push({ name: "home" })
         })
         .catch((error) => {
+          let errorMessage = ""
+
+          if (error.message === "The email address is already in use by another account") {
+              errorMessage = this.$t('badEmail')
+          } else {
+            errorMessage = error.message
+          }
           commit('setStatus', 'failure')
-          commit('setError', error.message)
+          commit('setError', errorMessage)
         })
     },
 

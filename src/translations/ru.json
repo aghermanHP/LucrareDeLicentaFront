@@ -1,10 +1,12 @@
 {
   "menu": {
-    "home": "domoi",
-    "list": "spisok",
-    "add": "dobaviti",
-    "register": "registratiia",
-    "contacts": "contacta",
-    "logout": "vahod"
-  }
+    "home": "домой",
+    "list": "список",
+    "add": "добавить",
+    "register": "зарегистрироваться",
+    "contacts": "контакты",
+    "logout": "выйти"
+  },
+  "language": "язык",
+  "badEmail": "Адрес электронной почты уже используется другой учетной записью."
 }

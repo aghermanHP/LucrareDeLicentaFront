@@ -7,14 +7,18 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@mdi/js": "^5.9.55",
     "core-js": "^3.6.4",
     "firebase": "^7.24.0",
     "firebase-tools": "^9.10.0",
     "firestore": "^1.1.6",
+    "mdi-vue": "^3.0.6",
     "vee-validate": "^3.2.5",
     "vue": "^2.6.11",
     "vue-i18n": "^8.24.4",
+    "vue-multiselect": "^2.1.6",
     "vue-router": "^3.1.6",
+    "vue-select": "^3.11.2",
     "vue-session": "^1.0.0",
     "vuejs-datepicker": "^1.6.2",
     "vuelidate": "^0.7.5",

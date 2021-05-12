@@ -70,7 +70,6 @@
 </template>
 
 <script>
-import {firebaseAuth} from "../../firebase/firebase_configs"
   export default {
     name: "login",
     data() {
