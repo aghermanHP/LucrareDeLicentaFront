@@ -4,9 +4,9 @@
     class="mx-auto"
   >
   
-     <FilterComponent @CA="getCouncils('Consiliui de Administrare (CA)')" 
-    @CC="getCouncils('Comisiei de Cenzori (CC)')" 
-    @CSL="getCouncils('Comisiei de Solutionare a Litigiilor (CSL)')"/>
+     <FilterComponent @PT="getCouncils('Consiliui de Administrare (CA)')"
+    @FT="getCouncils('Comisiei de Cenzori (CC)')"
+    @FE="getCouncils('Comisiei de Solutionare a Litigiilor (CSL)')"/>
     <v-list two-line>
                 <v-progress-linear
           v-if="loader==true"
@@ -79,10 +79,10 @@
       modal: false,
       loader: true
     }),
-    // mounted(){
-    //   this.getCouncils("Consiliui de Administrare (CA)")
-    //   console.log(this.items)
-    // },
+    mounted(){
+      this.getCouncils("Consiliui de Administrare (CA)")
+      console.log(this.items)
+    },
     methods: {
       async getCouncils(collectionTarget){
         this.loader = true;

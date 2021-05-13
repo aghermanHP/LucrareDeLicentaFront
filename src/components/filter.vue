@@ -35,13 +35,13 @@
     },
     methods: {
       sendPartTimeEvent(){
-          this.$emit('CC')
+          this.$emit('PT')
       },
       sendFullTimeEvent(){
         this.$emit('FT')
       },
       sendFreelanceEvent(){
-        this.$emit('CSL')
+        this.$emit('FE')
       }
     }
   }

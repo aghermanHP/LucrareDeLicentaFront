@@ -8,6 +8,7 @@ import VueSession from 'vue-session';
 import 'material-design-icons-iconfont/dist/material-design-icons.css';
 import VueI18n from 'vue-i18n';
 import languages from './translations/languages'
+import {firebaseAuth} from "./firebase/firebase_configs";
 
 Vue.use(VueSession);
 Vue.use(VueI18n);
@@ -19,14 +20,18 @@ firebase.analytics();
 Vue.prototype.$firebase = firebase;
 Vue.config.productionTip = false;
 export default router;
-
-new Vue({
-    router,
-    store,
-    vuetify,
-    i18n,
-    firebase,
-    render: h => h(App)
-}).$mount('#app')
+let app
+firebaseAuth.onAuthStateChanged(() => {
+    if (!app) {
+        new Vue({
+            router,
+            store,
+            vuetify,
+            i18n,
+            firebase,
+            render: h => h(App)
+        }).$mount('#app')
+    }
+})
 
 i18n.locale = 'ro'
