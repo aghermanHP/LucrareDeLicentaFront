@@ -5,7 +5,7 @@
   >
       <v-card-title class="cyan">
 				<v-toolbar-title class="white--text align-end">
-				Ordin de creare a Organelor Asociatiilor
+          {{$t("job.addFormName")}}
 				</v-toolbar-title>
 				</v-card-title>
 	<v-form
@@ -26,10 +26,9 @@
               <template v-slot:activator="{ on }">
                 <v-text-field
                   v-model="date"
-                  label="Data Document"
+                  :label="$t('job.createdAt')"
                   hint="MM/DD/YYYY"
                   persistent-hint
-
                   @blur="date = parseDate(form.dateFormatted)"
                   v-on="on"
                 ></v-text-field>
@@ -42,10 +41,10 @@
       <v-col cols="12" lg="7">
 	    	<v-overflow-btn
       		class="my-2"
-          v-model="form.organ"
+          v-model="form.type"
       		:items="form.items"
 	    		:rules="denumireRules"
-      		label="Denumirea Organului AUAI"
+      		:label="$t('job.category')"
       		dense
       	></v-overflow-btn>
 	    </v-col>
@@ -54,7 +53,7 @@
 	    		  			<v-text-field
                     v-model="form.firstName"
 	    							:rules="fnameRules"
-                    label="First name"
+                    :label="$t('job.firstname')"
                     required
                             ></v-text-field>
 	    		</v-col>
@@ -62,7 +61,7 @@
 	    							<v-text-field
                     v-model="form.lastName"
 	    							:rules="lnameRules"
-                    label="Last name"
+                    :label="$t('job.lastname')"
                     required
                             ></v-text-field>
 	    						</v-col>
@@ -72,7 +71,7 @@
 	    							<v-text-field
                     v-model="form.idnp"
 	    							:rules="idnpRules"
-                    label="IDNP"
+                    :label="$t('job.location')"
                     required
                             ></v-text-field>
 	    						</v-col>
@@ -189,17 +188,17 @@ export default {
         v => /.+\+.\./.test(v) || 'Date must be valid',
       ],
       idnpRules: [
-				v => !!v || 'IDNP is required',
-        v => /^[a-z]+(?:\d{8})$/.test(v) || "Trebuie sa inceapa cu seria + 8 numere"
+				v => !!v || 'location is required',
+        // v => /^[a-z]+(?:\d{8})$/.test(v) || "Trebuie sa inceapa cu seria + 8 numere"
 			],
 			 form: {
       dateFormatted:"",
-      organ: "",
+      type: "",
 			firstName: "",
 			lastName: "",
 			lasting: "",
 			idnp: "b00000000",
-      items: [ 'Consiliui de Administrare (CA)','Comisiei de Cenzori (CC)', 'Comisiei de Solutionare a Litigiilor (CSL)'],
+      items: [ 'Full time','Part time', 'Freelance'],
       comment: "xxxxx",
       startFormatted: "",
       finishFormatted: "",

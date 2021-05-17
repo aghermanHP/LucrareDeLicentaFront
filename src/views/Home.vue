@@ -4,9 +4,9 @@
       class="mx-auto"
   >
 
-    <FilterComponent @FullTime="getCouncils('Consiliui de Administrare (CA)')"
-                     @PartT="getCouncils('Comisiei de Cenzori (CC)')"
-                     @FR="getCouncils('Comisiei de Solutionare a Litigiilor (CSL)')"/>
+    <FilterComponent @FT="getCouncils('Consiliui de Administrare (CA)')"
+                     @PT="getCouncils('Comisiei de Cenzori (CC)')"
+                     @FE="getCouncils('Comisiei de Solutionare a Litigiilor (CSL)')"/>
     <v-list two-line>
       <v-progress-linear
           v-if="loader==true"

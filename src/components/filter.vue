@@ -5,17 +5,17 @@
     color="teal"
     class="filter-position"
   >
-    <v-btn @click="sendFullTimeEvent">
+    <v-btn @click="sendFullTimeEvent()">
       <span>Full-time</span>
       <v-icon>mdi-account-clock-outline</v-icon>
     </v-btn>
 
-    <v-btn @click="sendPartTimeEvent">
+    <v-btn @click="sendPartTimeEvent()">
       <span>Part-time</span>
       <v-icon>mdi-briefcase-clock-outline</v-icon>
     </v-btn>
 
-    <v-btn @click="sendFreelanceEvent">
+    <v-btn @click="sendFreelanceEvent()">
       <span>Freelance</span>
       <v-icon>mdi-account-reactivate-outline</v-icon>
     </v-btn>
@@ -35,13 +35,13 @@
     },
     methods: {
       sendPartTimeEvent(){
-          this.$emit('PT')
+          this.$emit('PT', [])
       },
       sendFullTimeEvent(){
-        this.$emit('FT')
+        this.$emit('FT', [])
       },
       sendFreelanceEvent(){
-        this.$emit('FE')
+        this.$emit('FE', [])
       }
     }
   }

@@ -1,12 +1,12 @@
 <template>
   <v-card
-    max-width="900"
+    max-width="1200"
     class="mx-auto"
   >
   
-     <FilterComponent @PT="getCouncils('Consiliui de Administrare (CA)')"
-    @FT="getCouncils('Comisiei de Cenzori (CC)')"
-    @FE="getCouncils('Comisiei de Solutionare a Litigiilor (CSL)')"/>
+     <FilterComponent v-on:PT="getCouncils('partTime')"
+    v-on:FT="getCouncils('Comisiei de Cenzori (CC)')"
+    v-on:FE="getCouncils('Comisiei de Solutionare a Litigiilor (CSL)')"/>
     <v-list two-line>
                 <v-progress-linear
           v-if="loader==true"
@@ -79,12 +79,9 @@
       modal: false,
       loader: true
     }),
-    mounted(){
-      this.getCouncils("Consiliui de Administrare (CA)")
-      console.log(this.items)
-    },
     methods: {
       async getCouncils(collectionTarget){
+        console.log(collectionTarget)
         this.loader = true;
         let data = [];
         try{ 

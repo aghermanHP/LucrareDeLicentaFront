@@ -8,5 +8,22 @@
     "logout": "Sortir"
   },
   "language": "Language",
-  "badEmail": "L'adresse e-mail est déjà utilisée par un autre compte."
+  "badEmail": "L'adresse e-mail est déjà utilisée par un autre compte.",
+  "job": {
+    "addFormName": "Formulaire d'ajout de poste",
+    "createdAt": "Date creation",
+    "category": "Category",
+    "firstname": "Nom",
+    "lastname": "Prenom",
+    "company": "company",
+    "url": "url",
+    "position": "Position",
+    "location": "location",
+    "description": "description",
+    "howToApply": "Comment appliquer",
+    "public": "public",
+    "email": "email",
+    "expiresAt": "date expiration",
+    "updatedAt": "date renouvelement"
+  }
 }

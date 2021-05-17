@@ -8,5 +8,22 @@
     "logout": "выйти"
   },
   "language": "язык",
-  "badEmail": "Адрес электронной почты уже используется другой учетной записью."
+  "badEmail": "Адрес электронной почты уже используется другой учетной записью.",
+  "job": {
+    "addFormName": "Форма добавления вакансии",
+    "createdAt": "создано Ha",
+    "category": "категория",
+    "firstname": "Имя",
+    "lastname": "Фамилия",
+    "company": "",
+    "url": "",
+    "position": "",
+    "location": "",
+    "description": "",
+    "howToApply": "",
+    "public": "",
+    "email": "",
+    "expiresAt": "",
+    "updatedAt": ""
+  }
 }

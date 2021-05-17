@@ -8,5 +8,22 @@
     "logout": "iesiti"
   },
   "language": "Limba",
-  "badEmail": "Adresa de e-mail este deja utilizată de un alt cont."
+  "badEmail": "Adresa de e-mail este deja utilizată de un alt cont.",
+  "job": {
+    "addFormName": "Formular adaugare post vacant",
+    "createdAt": "data crearii",
+    "category": "Categoria",
+    "firstname": "Prenume",
+    "lastname": "Nume",
+    "company": "Compania",
+    "url": "url",
+    "position": "pozitia",
+    "location": "locatie",
+    "description": "descriere",
+    "howToApply": "cum sa aplic",
+    "public": "public",
+    "email": "email",
+    "expiresAt": "data expirarii",
+    "updatedAt": "Republicat"
+  }
 }

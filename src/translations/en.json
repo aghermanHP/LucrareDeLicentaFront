@@ -8,5 +8,22 @@
     "logout": "Logout"
   },
   "language": "Language",
-  "badEmail": "The email address is already in use by another account."
+  "badEmail": "The email address is already in use by another account.",
+  "job": {
+    "addFormName": "Vacancy add form",
+    "createdAt": "Created at",
+    "category": "Category",
+    "firstname": "Firstname",
+    "lastname": "Lastname",
+    "company": "company",
+    "url": "url",
+    "position": "position",
+    "location": "location",
+    "description": "description",
+    "howToApply": "How to apply",
+    "public": "Is public",
+    "email": "email",
+    "expiresAt": "expiresAt",
+    "updatedAt": "updatedAt"
+  }
 }
